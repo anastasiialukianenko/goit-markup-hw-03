@@ -35,6 +35,10 @@ h1, h2, h3, h4, h5, h6, ul, p{
 padding: 0;
 margin: 0;
 }
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 /* Logo */
 
@@ -109,9 +113,12 @@ padding-bottom: 24px;
 }
 
 /* Hero */
-.hero{
+.hero-section{
+    padding-top: 188px;
+    padding-bottom: 188px;
     text-align: center;
     background-color: var(--hero-background-color);
+    
 }
 .hero-title{
 margin-bottom: 48px;
@@ -145,12 +152,24 @@ border: 0;
     Cursor: pointer;}
 
  /* < -Our features-> */
+ .features-list{
+    display: flex;
+ }
+ .features-item{
+    width: calc((100%-72px)/4);
+    margin-right: 24px;
+ }
+.features-item:nth-child(4n){
+    margin-right: 0px;
+}
+
 .title{
 color: var(--header-color);
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     margin-bottom: 72px;
+    text-align: center;
 }
 .subtitle{
 margin-bottom: 8px;
@@ -186,18 +205,56 @@ font-weight: 500;
 .about-title{
     margin-bottom: 72px;
 }
+.about.section{
+    padding-top: 0px;
+}
+
+.about-list {
+    display: flex;
+}
+
+.about-item {
+    width: calc((100%-48px)/3);
+    margin-right: 24px;
+}
+
+.about-item:nth-child(3n) {
+    margin-right: 0px;
+}
 
 /* Our team */
 .team{
     background-color: #F4F4FD;
 }
-
 .section-team-item{
+width: calc((100%-72px)/4);
+    margin-right: 24px;
+
     background-color: var(--primary-background-color);
 }
+ .team-list {
+     display: flex;
+ }
+ .section-team-item:nth-child(4n) {
+     margin-right: 0px;}
+
+     /* Під питанням */
+.team-subtitle{
+        text-align: center;
+        padding-top: 32px;
+        margin-bottom: 8px;
+    }
+     
+.team-text{
+      text-align: center;
+      padding-bottom: 32px;
+         }
 
 /* footer */
 .page-footer{
+padding-top: 100px;
+padding-bottom: 100px;
+
 background: #2E2F42;
 }
 
@@ -206,10 +263,21 @@ background: #2E2F42;
 }
 .footer-text {
 margin-top: 16px;
+width: 264px;
+
     color: var(--accent-color);
     line-height: 1.5;}
 
     /* Portfolio */
+.portfolio-nav{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+.portfolio-item+ .portfolio-item{
+    margin-left: 24px;
+}
+    
 .filter-btn{
     display: inline-block;
         border-radius: 4px;
@@ -231,9 +299,39 @@ margin-top: 16px;
     .filter-btn:focus {
         color: #FFFFFF;
         background-color:#404BBF;
+        border: 0;
         Cursor: pointer;
     }
 
 /* < !--Galaery of works--> */
 .portfolio-link {
     color: var(--primary-text-color);}
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-item{
+    width: calc((100% - 48px)/3);
+    margin-right: 24px;
+    margin-bottom: 48px;
+
+    border: 1px solid #E7E9FC;
+}
+.gallery-item:nth-child(3n){
+    margin-right: 0px;}
+
+.gallery-item:nth-last-child(-n + 3){
+            margin-bottom: 0px;
+}
+
+.portfolio-subtitle {
+    padding-top: 32px;
+    padding-left: 16px;
+    margin-bottom: 8px;
+}
+
+.portfolio-text {
+    padding-bottom: 32px;
+    padding-left: 16px;
+}
