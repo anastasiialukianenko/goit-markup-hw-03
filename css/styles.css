@@ -20,6 +20,8 @@ body{
 }
 img{
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 .container{
     width: 100%;
@@ -49,6 +51,9 @@ ul{
 }
 
 /* Logo */
+.page-header{
+    border-bottom: 1px solid #E7E9FC;
+}
 
 .logo {
     color: var(--logo-color);
@@ -69,7 +74,6 @@ ul{
 .nav-box.container{
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #E7E9FC;
 }
 
 .nav-list{
@@ -108,6 +112,10 @@ padding-bottom: 24px;
 
 
 .adress-link {
+    display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
+
     color: var(--primary-text-color);
     line-height: 1.5;
         font-style: normal;
@@ -130,6 +138,9 @@ padding-bottom: 24px;
 }
 .hero-title{
 margin-bottom: 48px;
+width: 496px;
+margin-left: auto;
+margin-right: auto;
 
 color: #FFFFFF;
 font-size: 56px;
@@ -143,7 +154,8 @@ border-radius: 4px;
 padding: 16px 32px;
 min-width: 169px;
 text-align: center;
-border: 0;
+border: none;
+cursor: pointer;
 
     font-family: inherit;
     color: #FFFFFF;
@@ -154,20 +166,22 @@ border: 0;
     letter-spacing: 0.04em;
 
 }
+
 .hero-button:hover,
 .hero-button:focus {
-    background-color: var(--hover-color);
-    Cursor: pointer;}
+    background-color: var(--hover-color);}
+    
 
  /* < -Our features-> */
  .features-list{
     display: flex;
  }
+ 
  .features-item{
     width: calc((100%-72px)/4);
     margin-right: 24px;
  }
-.features-item:nth-child(4n){
+.features-item:last-child{
     margin-right: 0px;
 }
 
@@ -183,7 +197,7 @@ color: var(--header-color);
 margin-bottom: 8px;
 
 color: var(--header-color);
-Size:20px;
+size:20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 font-weight: 500;
@@ -226,7 +240,7 @@ font-weight: 500;
     margin-right: 24px;
 }
 
-.about-item:nth-child(3n) {
+.about-item:last-child {
     margin-right: 0px;
 }
 
@@ -243,19 +257,21 @@ width: calc((100%-72px)/4);
  .team-list {
      display: flex;
  }
- .section-team-item:nth-child(4n) {
+ .section-team-item:last-child{
      margin-right: 0px;}
 
-     /* Під питанням тут падінг чи маржин */
+   .team-subscription{
+    padding-top: 32px;
+    padding-bottom: 32px;
+   }
+
 .team-subtitle{
         text-align: center;
-        padding-top: 32px;
         margin-bottom: 8px;
     }
      
 .team-text{
       text-align: center;
-      padding-bottom: 32px;
          }
 
 /* footer */
@@ -292,6 +308,8 @@ width: 264px;
         padding: 12px 24px;
         text-align: center;
         border: 1px solid #E7E9FC;
+        cursor: pointer;
+        
 
         font-family: inherit;
         color: var(--primary-btn-color);
@@ -307,8 +325,7 @@ width: 264px;
     .filter-btn:focus {
         color: #FFFFFF;
         background-color:#404BBF;
-        border: 0;
-        Cursor: pointer;
+        border-color: transparent;
     }
 
 /* < !--Galaery of works--> */
@@ -323,8 +340,6 @@ width: 264px;
     width: calc((100% - 48px)/3);
     margin-right: 24px;
     margin-bottom: 48px;
-
-    border: 1px solid #E7E9FC;
 }
 .gallery-item:nth-child(3n){
     margin-right: 0px;}
@@ -333,13 +348,14 @@ width: 264px;
             margin-bottom: 0px;
 }
 
-.portfolio-subtitle {
-    padding-top: 32px;
-    padding-left: 16px;
-    margin-bottom: 8px;
+.portfolio-subsciption{
+padding-top: 32px;
+padding-bottom: 32px;
+padding-left: 16px;
+border: 1px solid #E7E9FC;
+border-top: none;
 }
 
-.portfolio-text {
-    padding-bottom: 32px;
-    padding-left: 16px;
+.portfolio-subtitle {
+    margin-bottom: 8px;
 }
