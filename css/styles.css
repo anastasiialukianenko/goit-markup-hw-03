@@ -260,7 +260,7 @@ width: calc((100%-72px)/4);
  .section-team-item:last-child{
      margin-right: 0px;}
 
-   .team-subscription{
+   .team-description{
     padding-top: 32px;
     padding-bottom: 32px;
    }
@@ -348,12 +348,13 @@ width: 264px;
             margin-bottom: 0px;
 }
 
-.portfolio-subsciption{
+.portfolio-description{
 padding-top: 32px;
 padding-bottom: 32px;
 padding-left: 16px;
 border: 1px solid #E7E9FC;
 border-top: none;
+
 }
 
 .portfolio-subtitle {
